@@ -8,7 +8,7 @@ const Form = (props) => {
         <input
           style={{
             width: '80vw',
-            height: '7.5vh',
+            height: '7vh',
             backgroundColor: 'rgba(7, 238, 242, 0.3)',
             border: 'none',
             textAlign: 'center',
@@ -16,7 +16,7 @@ const Form = (props) => {
             fontSize: 24,
             fontWeight: 600,
             borderRadius: 10,
-            marginTop: '5vh',
+            marginTop: '3.5vh',
             color: 'black'
           }}
           type='text'

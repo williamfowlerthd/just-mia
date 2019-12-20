@@ -44,8 +44,8 @@ function App() {
   return (
     //send props to form and weather and console weather data
     <div className="App">
-      <h2 style={{ fontFamily: 'Amatic SC, cursive', fontSize: "4em" }}>Mia's</h2>
-      <h2 style={{ fontFamily: 'Amatic SC, cursive', fontSize: "4em" }}>Weather App</h2>
+      <h2 style={{ fontFamily: 'Amatic SC, cursive', fontSize: "3.8em" }}>Mia's</h2>
+      <h2 style={{ fontFamily: 'Amatic SC, cursive', fontSize: "3.8em" }}>Weather App</h2>
       <Form getWeather={fetchData} />
       <Weather
         city={weather.city}
