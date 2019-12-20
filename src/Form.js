@@ -16,7 +16,7 @@ const Form = (props) => {
             fontSize: 24,
             fontWeight: 600,
             borderRadius: 10,
-            marginTop: '3.5vh',
+            marginTop: '1vh',
             color: 'black'
           }}
           type='text'
