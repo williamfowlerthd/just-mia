@@ -21,15 +21,15 @@ const Weather = ({ description, city, error, temperature }) => {
       const snow = ['snow', 'flurries', 'sleet']
       for (let i = 0; i < weatherDescription.length; i++) {
         if (cloudy.includes(weatherDescription[i])) {
-          return <img style={{ position: 'fixed', left: 0, top: 0, zIndex: -1, width: '420px', height: '750px', backgroundSize: 'contain' }} src='https://media.freestocktextures.com/cache/74/8b/748ba3fe5976d8b03219a64851d2790d.jpg' alt='overcast' />
+          return <img style={{ position: 'fixed', left: 0, top: 0, zIndex: -1, width: '420px', height: '825px', backgroundSize: 'contain' }} src='https://media.freestocktextures.com/cache/74/8b/748ba3fe5976d8b03219a64851d2790d.jpg' alt='overcast' />
         } else if (sunny.includes(weatherDescription[i])) {
-          return <img style={{ position: 'fixed', left: 0, top: 0, zIndex: -1, width: '420px', height: '750px', backgroundSize: 'contain' }} src={require('./images/sunny.jpg')} alt='sunny sky' />
+          return <img style={{ position: 'fixed', left: 0, top: 0, zIndex: -1, width: '420px', height: '825px', backgroundSize: 'contain' }} src={require('./images/sunny.jpg')} alt='sunny sky' />
         } else if (rain.includes(weatherDescription[i])) {
-          return <img style={{ position: 'fixed', left: 0, top: 0, zIndex: -1, width: '420px', height: '750px', backgroundSize: 'contain' }} src={require('./images/rain.jpg')} alt='rain on window' />
+          return <img style={{ position: 'fixed', left: 0, top: 0, zIndex: -1, width: '420px', height: '825px', backgroundSize: 'contain' }} src={require('./images/rain.jpg')} alt='rain on window' />
         } else if (fog.includes(weatherDescription[i])) {
-          return <img style={{ position: 'fixed', left: 0, top: 0, zIndex: -1, width: '420px', height: '750px', backgroundSize: 'contain' }} src={require('./images/foggy.jpeg')} alt='fog in hills' />
+          return <img style={{ position: 'fixed', left: 0, top: 0, zIndex: -1, width: '420px', height: '825px', backgroundSize: 'contain' }} src={require('./images/foggy.jpeg')} alt='fog in hills' />
         } else if (snow.includes(weatherDescription[i])) {
-          return <img style={{ position: 'fixed', left: 0, top: 0, zIndex: -1, width: '420px', height: '750px', backgroundSize: 'contain' }} src={require('./images/snow.jpg')} alt='snow' />
+          return <img style={{ position: 'fixed', left: 0, top: 0, zIndex: -1, width: '420px', height: '825px', backgroundSize: 'contain' }} src={require('./images/snow.jpg')} alt='snow' />
         }
       }
     }
@@ -37,7 +37,7 @@ const Weather = ({ description, city, error, temperature }) => {
 
   return (
 
-    <div style={{ fontSize: '2.5em', fontFamily: 'Amatic SC, cursive', color: 'black', fontWeight: 600 }} >
+    <div style={{ fontSize: '2.9em', fontFamily: 'Amatic SC, cursive', color: 'black', fontWeight: 700 }} >
 
       {temperature && <p>{temperature}  °F</p>}
       {description && <p> Conditions: {description}</p>}
